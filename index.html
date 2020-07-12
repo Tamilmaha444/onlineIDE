@@ -1,0 +1,141 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    crossorigin="anonymous">
+  <script src="Http://code.jquery.com/jquery.min.js"></script>
+
+  <script src="./jquery-linenumbers.min.js"></script>
+  <script src="./sample-data.js"></script>
+  <script src="./ide.js"></script>
+</head>
+<style>
+  body {
+    background:#022431 !important;
+    color: #fff !important;
+  }
+
+  select {
+    background-color: inherit !important;
+    color: inherit !important;
+  }
+  select option { color: black !important; }
+
+  .alert {
+    margin: 0;
+  }
+
+  .row {
+    margin: 0;
+  }
+
+  .full-height {
+    height: 100% !important;
+  }
+
+  textarea {
+    resize: none;
+    line-height: 2 !important;
+    padding-top: 0.4rem;
+  }
+
+  textarea[data-name*="linenumbers"] {
+    width: 40px !important;
+  }
+
+  input:focus,
+  textarea:focus,
+  select:focus {
+    outline: none !important;
+  }
+
+  .typed {
+    height: 90% !important;
+    width: calc(100% - 40px) !important;
+  }
+
+  button:hover {
+  background-color: inherit !important;
+  color: inherit !important;
+}
+
+
+</style>
+<head> 
+		<meta charset = "utf-8" /> 
+		<title> 
+			Examly-Online ide
+		</title> 
+		<!-- add icon link -->
+		<link rel = "icon" href = 
+		"https://image.winudf.com/v2/image/Y29tLmV4YW1seS5hcHBsaWNhdGlvbl9pY29uXzY3d25ybXQ5/icon.png?w=170&fakeurl=1"
+		type = "image/x-icon"> 
+		
+</head>
+
+<body style="padding:5px;">
+  <div style="height:10%;" class="row">
+    <div class="col-2" style="display: flex;align-items: center;" role="alert">
+      <img src="https://examly.io/wp-content/uploads/2017/10/examly-logo-white-2-1-uai-258x76.png" width = "150" height = " 50">
+    </div>
+    <div class="col-6" style="display: flex;align-items: center;" role="alert">
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <label class="input-group-text" for="inputGroupSelect01">Select Language</label>
+        </div>
+        <select class="custom-select" id="languages" style="width:75%"></select>
+      </div>
+    </div>
+    <div class="col-4" style="place-self: center;">
+      <button type="button" class="btn btn-outline-success" onclick="createSubmission()">
+        <div id="spin" class="spinner-border text-success" role="status" style="height: 20px; width: 20px;display: none;">
+          <span class="sr-only">Loading...</span>
+        </div>
+        <i id="run" class="fa fa-play" style="margin-right: 8px;"></i>Run
+      </button>
+    </div>
+  </div>
+  <div style="height: 88%;
+  margin-top: 1%;" class="row" style="margin-top:10px;">
+    <div class="col-6 full-height">
+      <p>Code here !</p>
+      <textarea id="code" spellcheck="false" class="form-control typed" style="background: inherit;
+      color: inherit;"></textarea>
+    </div>
+    <div class="col-6">
+      <div class="row" style="height: 50%;">
+        <p>Your input here !</p>
+        <textarea id="input" spellcheck="false" class="form-control typed" style="background: inherit;
+        color: inherit;"></textarea>
+      </div>
+      <div class="row" style="margin-top: 12px;">
+        <div class="row" style="width: 100%;align-items: center;">
+          <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <a class="nav-link active" id="stdout" href="#" onclick="setResultTab('stdout')">STDOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#" id="stderr" onclick="setResultTab('stderr')">STDERR</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" id="message" onclick="setResultTab('message')">SANDBOX MESSAGE</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" id="compile_output" onclick="setResultTab('compile_output')">COMPILER
+                OUTPUT</a>
+            </li>
+          </ul>
+          <p style="margin:0 !important;padding-left:2px;" id="output_message"></p>
+        </div>
+        <div class="row" style="padding:15px; overflow-y: scroll;height: 235px;border: thin solid;width: 100%;">
+          <p id="output" style="white-space: pre-line"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
