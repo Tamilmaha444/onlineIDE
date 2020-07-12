@@ -1,11 +1,11 @@
 # onlineIDE
-# problem statement
+# Problem statement
 1. you need to built a single app, that uses the API given in the below link https://rapidapi.com/hermanzdosilovic/api/judge0 and build an online IDE similar to https://ide.judge0.com/
 2. you should maintain your codes in GITHUB with proper documentation.
-3.the app can be hosted in any of the cloud service providers, preferable in AWS/Azure/GCP.
-# description
+3. The app can be hosted in any of the cloud service providers, preferable in AWS/Azure/GCP.
+# Description
 This online IDE is a free and open-source online code editor that allows you to write and execute code from a rich set of languages. It's perfect for anybody who just wants to quickly write and run some code without opening a full-featured IDE on their computer. Moreover, it is also useful for teaching and learning or just trying out a new language.
-# prerequisite
+# Prerequisite
 ## IDE
 An integrated development environment (IDE) is a software application that provides comprehensive facilities to computer programmers for software development. An IDE normally consists of at least a source code editor, build automation tools and a debugger. Some IDEs, such as NetBeans and Eclipse, contain the necessary compiler, interpreter, or both; others, such as SharpDevelop and Lazarus, do not.The boundary between an IDE and other parts of the broader software development environment is not well-defined; sometimes a version control system or various tools to simplify the construction of a graphical user interface (GUI) are integrated. Many modern IDEs also have a class browser, an object browser, and a class hierarchy diagram for use in object-oriented software development.
 ## API
@@ -16,10 +16,10 @@ Hypertext Markup Language (HTML) is the standard markup language for documents d
 Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language like HTML.CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.CSS is designed to enable the separation of presentation and content, including layout, colors, and fonts.This separation can improve content accessibility, provide more flexibility and control in the specification of presentation characteristics, enable multiple web pages to share formatting by specifying the relevant CSS in a separate .css file, and reduce complexity and repetition in the structural content.
 ## javascript
 JavaScript often abbreviated as JS, is a programming language that conforms to the ECMAScript specification.JavaScript is high-level, often just-in-time compiled, and multi-paradigm. It has curly-bracket syntax, dynamic typing, prototype-based object-orientation, and first-class functions.
-# site information
+# Site information
 link to our site:http://www.myonlineide.com.s3-website.ap-south-1.amazonaws.com
 In this site i have used an API:https://rapidapi.com/hermanzdosilovic/api/judge0
-# steps to use this portal
+# Steps to use this portal
 1.click the link(http://www.myonlineide.com.s3-website.ap-south-1.amazonaws.com) it will direct you to our website.
 2.select any language and type your code in "Code here !" tab.
 3.if you want to get the input at runtime, give your input in "Your input here !" tab and then press run button.
