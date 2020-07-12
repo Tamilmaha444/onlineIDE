@@ -24,4 +24,4 @@ JavaScript often abbreviated as JS, is a programming language that conforms to t
 2. select any language and type your code in "Code here !" tab.
 3. if you want to get the input at runtime, give your input in "Your input here !" tab and then press run button.
 4. if your code is clear,you won't receive any errors and your output will be successfully displayed.
-5. else if your code met any errors that error will be displayed in "STDERR" you can make changes in your code accordingly.
+5. else if your code met any errors that error will be displayed in "STDERR" or "COMPILER OUTPUT" you can make changes in your code accordingly.
