@@ -17,11 +17,11 @@ Cascading Style Sheets (CSS) is a style sheet language used for describing the p
 ## javascript
 JavaScript often abbreviated as JS, is a programming language that conforms to the ECMAScript specification.JavaScript is high-level, often just-in-time compiled, and multi-paradigm. It has curly-bracket syntax, dynamic typing, prototype-based object-orientation, and first-class functions.
 # Site information
-link to our site:http://www.myonlineide.com.s3-website.ap-south-1.amazonaws.com
-In this site i have used an API:https://rapidapi.com/hermanzdosilovic/api/judge0
+* link to our site:http://www.myonlineide.com.s3-website.ap-south-1.amazonaws.com
+* In this site i have used an API:https://rapidapi.com/hermanzdosilovic/api/judge0
 # Steps to use this portal
-1.click the link(http://www.myonlineide.com.s3-website.ap-south-1.amazonaws.com) it will direct you to our website.
-2.select any language and type your code in "Code here !" tab.
-3.if you want to get the input at runtime, give your input in "Your input here !" tab and then press run button.
-4.if your code is clear,you won't receive any errors and your output will be successfully displayed.
-5.else if your code met any errors that error will be displayed in "STDERR" you can make changes in your code accordingly.
+1. click the link(http://www.myonlineide.com.s3-website.ap-south-1.amazonaws.com) it will direct you to our website.
+2. select any language and type your code in "Code here !" tab.
+3. if you want to get the input at runtime, give your input in "Your input here !" tab and then press run button.
+4. if your code is clear,you won't receive any errors and your output will be successfully displayed.
+5. else if your code met any errors that error will be displayed in "STDERR" you can make changes in your code accordingly.
